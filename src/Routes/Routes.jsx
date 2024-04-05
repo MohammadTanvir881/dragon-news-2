@@ -5,6 +5,8 @@ import Login from "../Pages/OtherPage/Login";
 import Register from "../Pages/OtherPage/Register";
 import NewsDetails from "../Pages/OtherPage/NewsDetails";
 import PrivateRoutes from "./PrivateRoutes";
+import About from "../Pages/OtherPage/About";
+import Career from "../Pages/OtherPage/Career";
 
 const router = createBrowserRouter([
     {
@@ -19,6 +21,15 @@ const router = createBrowserRouter([
             {
                 path:"/login",
                 element: <Login></Login>
+            },
+            {
+                path:"/about",
+                element: <PrivateRoutes><About></About></PrivateRoutes>
+            }
+            ,
+            {
+                path:"/career",
+                element: <PrivateRoutes><Career></Career></PrivateRoutes>
             }
             ,
             {

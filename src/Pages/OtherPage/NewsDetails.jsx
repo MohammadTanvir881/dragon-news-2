@@ -16,8 +16,8 @@ const NewsDetails = () => {
         <div>
             <Header></Header>
             <Navbar></Navbar>
-             <div className="my-5 grid md:grid-cols-4 gap-2">
-                  <div className="col-span-3" >
+             <div className="my-5 p-3 grid md:grid-cols-4 gap-2">
+                  <div className=" md:col-span-3" >
                   <div className="card my-10 bg-base-100 shadow-xl">
       <figure>
         <img src={image_url} alt="Shoes" />
@@ -65,7 +65,7 @@ const NewsDetails = () => {
     </div>
                   </div>
 
-                  <div className="col-span-1 ">
+                  <div className="md:col-span-1 ">
                      <RightSideNav></RightSideNav>
                   </div>
              </div>

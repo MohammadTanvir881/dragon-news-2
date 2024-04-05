@@ -16,7 +16,7 @@ const Home = () => {
             <Latest></Latest>
             <Navbar></Navbar>
 
-            <div className="grid md:grid-cols-4 gap-5">
+            <div className="grid p-3 md:grid-cols-4 gap-5">
                  <div className="md:col-span-1 ">
                      <LeftSideNav></LeftSideNav>
                  </div>
