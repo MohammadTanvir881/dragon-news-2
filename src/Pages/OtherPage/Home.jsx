@@ -7,8 +7,10 @@ import Latest from "./Latest";
 import News from "./News";
 
 
+
 const Home = () => {
     const data = useLoaderData();
+ 
     console.log(data)
     return (
         <div>
@@ -27,7 +29,7 @@ const Home = () => {
                      }
                  </div>
                  <div className="md:col-span-1 ">
-                    <RightSideNav></RightSideNav>
+                    <RightSideNav ></RightSideNav>
                     </div>
             </div>
         </div>

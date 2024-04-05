@@ -8,13 +8,25 @@ import {
 import qzone from "../../assets/qZone1.png";
 import qzone1 from "../../assets/qZone2.png";
 import qzone2 from "../../assets/qZone3.png";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import { GoogleAuthProvider } from "firebase/auth";
+import auth from "../../firebase/firebase.config";
 
 const RightSideNav = () => {
+  const {googleProvider}= useContext(AuthContext);
+  const provider = new GoogleAuthProvider()
+  const handleLogin=()=>{
+    
+      googleProvider(provider)
+      .then()
+      .catch()
+  }
   return (
     <div className="p-4">
       <div className="space-y-3 mb-6">
         <h1 className="text-2xl font-semibold">Login With :</h1>
-        <button className="btn btn-outline w-full flex items-center">
+        <button onClick={handleLogin} className="btn btn-outline w-full flex items-center">
           {" "}
           <FaGoogle /> Login with Google
         </button>
